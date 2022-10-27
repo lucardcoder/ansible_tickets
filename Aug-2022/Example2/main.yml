@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+  - name: Include task
+    include_tasks: hostname.yml
