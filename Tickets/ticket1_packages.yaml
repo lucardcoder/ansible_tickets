@@ -1,0 +1,7 @@
+---
+- name: Installs packages
+  hosts: all 
+  user: root
+  tasks:
+  - name: install list of packages
+    # Your code goes here
