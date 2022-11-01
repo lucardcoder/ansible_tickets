@@ -6,8 +6,7 @@
 
 - name: Copy WordPress Files
   shell: "cp -r /root/wordpress/* /var/www/html/"
-  args:
-    creates: /var/www/html/index.php
+  
 
 - name: Recursively change ownership of a directory
   file:
