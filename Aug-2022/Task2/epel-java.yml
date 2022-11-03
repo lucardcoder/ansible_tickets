@@ -1,0 +1,9 @@
+  - name: install epel    
+    yum:
+      name:
+      - epel-release
+      - yum-utils
+      state: latest
+  - name : install java
+    yum:
+      name: java-11-openjdk
