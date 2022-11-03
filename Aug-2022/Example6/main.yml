@@ -1,8 +1,0 @@
-- hosts: all
-  tasks:
-  - name: Check Kernel Version
-    shell: "uname -r"
-    register: myvar
-
-  - debug:
-      msg: '{{ myvar.stdout }}'
