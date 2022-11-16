@@ -4,4 +4,14 @@
   user: root
   tasks:
   - name: install list of packages
-    # Your code goes here
+    package:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - telnet
+    - unzip
+    - lftp
+    - elinks
+    - wget
+
+
